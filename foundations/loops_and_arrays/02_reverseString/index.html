@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    const reverseString = function(str) {
+    const result = [];
+    const split = str.split(" ")
+
+    for(let i=0; i < split.length; i++){
+        result.push(split[i].split("").reverse().join(""))
+    }
+    console.log(result.join(" "))
+    
+
+};
+    
+    reverseString("hello there")
+    </script>
+</body>
+</html>
